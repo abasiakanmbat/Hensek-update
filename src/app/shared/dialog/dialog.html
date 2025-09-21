@@ -1,0 +1,23 @@
+
+<style>
+  .button{
+    padding: 8px 19px;
+    border: none;
+    border-radius: 9px;
+    background: #fabc3d;
+  }
+</style>
+  <h2 mat-dialog-title>{{ data.title }}</h2>
+    <mat-dialog-content>
+      <div style="display: flex; flex-direction: row; justify-content: space-between;">
+
+        <p>{{ data.message }}</p>
+        <app-countdown targetDate="2025-09-23T23:59:59"></app-countdown>
+      </div>
+      <img *ngIf="data.imageUrl" [src]="data.imageUrl" alt="Dialog Image"
+       style="max-width: 100%; margin-top: 1rem; border-radius: 8px;" />
+      
+    </mat-dialog-content>
+    <mat-dialog-actions>
+      <button style="" class="button" (click)="close()">Close</button>
+    </mat-dialog-actions>
