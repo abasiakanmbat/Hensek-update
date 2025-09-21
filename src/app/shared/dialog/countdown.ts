@@ -7,14 +7,14 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
   template: `
     <div >
-      <div style="display: flex;  border-radius: 20px; height: fit-content;">
-        <div style="display: flex; height ">
-            <p style="background-color: #2B2D37; color: white; padding:0 0.5rem ">{{ timeLeft().days }}d</p>
-        <p style="background-color: #2B2D37; color: #ffc107; padding:0 0.5rem"> :{{ timeLeft().hours }}h</p>
+      <div style="display: flex;  border-radius: 20px; height: fit-content; font-weight: 600;">
+        <div style="display: flex; background-color: #2B2D37;">
+            <p style=" color: white; padding:0 0.5rem ">{{ timeLeft().days }}d</p>
+        <p style=" color: #ffc107; padding:0 0.5rem"> :{{ timeLeft().hours }}h</p>
         </div>
-        <div style="display: flex;  ">
-           <p style="background-color: #ffc107; color: white; padding:0 0.5rem">:{{ timeLeft().minutes }}m </p>
-        <p style="background-color: #ffc107; color: #2B2D37; padding:0 0.5rem">  :{{ timeLeft().seconds }}s</p>
+        <div style="display: flex;  background-color: #ffc107;">
+           <p style=" color: #f2f2f2; padding:0 0.5rem">:{{ timeLeft().minutes }}m </p>
+        <p style=" color: #2B2D37; padding:0 0.5rem">  :{{ timeLeft().seconds }}s</p>
         </div>
       
        

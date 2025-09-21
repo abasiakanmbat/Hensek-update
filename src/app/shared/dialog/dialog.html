@@ -11,8 +11,8 @@
     <mat-dialog-content>
       <div style="display: flex; flex-direction: row; justify-content: space-between;">
 
-        <p>{{ data.message }}</p>
         <app-countdown targetDate="2025-09-23T23:59:59"></app-countdown>
+        <p>{{ data.message }}</p>
       </div>
       <img *ngIf="data.imageUrl" [src]="data.imageUrl" alt="Dialog Image"
        style="max-width: 100%; margin-top: 1rem; border-radius: 8px;" />
