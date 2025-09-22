@@ -14,12 +14,12 @@ export class App {
   private dialog = inject(MatDialog);
 ngOnInit() {
    this.dialog.open(Dialog, {
-      data: { title: 'Hensek celebrates Akwa Ibom Anniversary', message: '', imageUrl: '/aks-hensek.jpg' }
+      data: { title: 'Hensek Celebrates Akwa Ibom Anniversary', message: '', imageUrl: '/aks-hensek.jpg' }
     });
 }
   openDialog() {
     this.dialog.open(Dialog, {
-      data: { title: 'Hensek celebrates Akwa Ibom Anniversary', message: '', imageUrl: '/aks-hensek.jpg' }
+      data: { title: 'Hensek Celebrates Akwa Ibom Anniversary', message: '', imageUrl: '/aks-hensek.jpg' }
     });
   }
 }
